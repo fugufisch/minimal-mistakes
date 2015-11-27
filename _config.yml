@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Data Des*2ert
+title:            Random Rumblings
 locale:           en_US
 url:
 
@@ -8,7 +8,9 @@ url:
 # Jekyll configuration
 
 permalink:   /:categories/:title/
-markdown:    kramdown
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 highlighter: pygments
 sass:
   sass_dir: _sass

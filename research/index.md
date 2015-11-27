@@ -14,12 +14,12 @@ high-throughput biological data and I then try to go on by putting
 this knowledge into models that can simulate what is going on in the
 cell.
 
-## Modeling
+<!-- ## Modeling
 
-I do models of different biological systems. These 
+I do models of different biological systems. These
 
 ## Influenza Virus
 
 
 
-## Data integration
+## Data integration -->
