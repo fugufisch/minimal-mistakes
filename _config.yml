@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title:            Site Title
+title:            Data Des*2ert
 locale:           en_US
-url:              
+url:
 
 
 # Jekyll configuration
@@ -21,26 +21,26 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: false
+  enable_coderay: false
 
 
 # Site owner
 owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email: 
-  disqus-shortname: 
-  twitter: #username
+  name: Max Floettmann
+  avatar: avatar.png
+  bio: "I love data, code, and pictures. Even better if they fit together."
+  email:
+  disqus-shortname:
+  twitter: fugufisch
   facebook: #username
   google:
     plus: #username
-    analytics: 
-    verify: 
-    ad-client: 
-    ad-slot: 
-  bing-verify: 
-  github: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: fugufisch
   stackoverflow: #http://stackoverflow.com/users/123456/username
   linkedin: #username
   instagram: #username
