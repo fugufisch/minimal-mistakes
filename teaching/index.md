@@ -11,9 +11,11 @@ image:
 
 ## Python
 
-A python course for undergrad and grad students I teach at HU
+- A python course for undergrad and grad students I teach at HU
 Berlin. We introduce python in general and some more scientific
 packages like numpy and pandas. Please have a look at the course [website](http://jaguar.biologie.hu-berlin.de/~max/python_course/python_course_2014.html).
+
+- We updated this course in 2015 and put everything into a [GIT repo](https://github.com/tbphu/hu_bp_python_course)
 
 ### Introduction to Regular Expressions
 
@@ -25,5 +27,3 @@ a website full of obfuscated email adresses to match.
 
 An R [bioconductor](http://bioconductor.org) course I did a couple of years ago for students
 at HU Berlin. It is a brief introduction into micro-array analysis. Here are some [slides](microarray_r.pdf) we prepared for it.
-
-
