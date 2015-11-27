@@ -1,0 +1,211 @@
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue'
+%(default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage[]{fontspec,xltxtra,xunicode,fontawesome}
+\renewcommand{\familydefault}{\rmdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% \Setromanfont[Mapping=tex-text,
+% 			  Numbers=OldStyle,
+% 			  Ligatures={Common}
+% 		       %    SizeFeatures={%
+% 		       %    {Size={-10}, Font=* Caption},
+% 		       %    {Size={10-13.0}, Font=*},
+% 		       %    {Size={13.01-19.9}, Font=* Subhead, Ligatures=Rare, Contextuals={Swash,Alternate}},
+% 		       % {Size={19.91-},Font=* Display,
+%                        % Ligatures=Rare,
+%                        % Contextuals={Swash,Alternate}}}]
+%                           ]
+% 			  {Arno Pro} %
+% character encoding
+%\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\usepackage[utf8]{inputenc}
+\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\maketitlenamewidth}{10cm}        % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Dr. Max}
+\familyname{Flöttmann}
+\title{Curriculum Vit\ae{}}               % optional, remove the line if not wanted
+\address{}{Berlin}    % optional, remove the line if not wanted
+\mobile{+49}                     % optional, remove the line if not wanted
+\phone{+49}                      % optional, remove the line if not wanted
+%\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
+\email{}                          % optional, remove the line if not wanted
+%\homepage{www.com}                    % optional, remove the line if not wanted
+%\extrainfo{04.11.1982}            % optional, remove the line if not wanted
+%\photo[100pt]{ich}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+\usepackage{graphicx}
+
+\makeatletter
+\newcommand{\unterschrift}{\@firstname ~ \@familyname}
+\makeatother
+
+% bibliography with mutiple entries
+\usepackage{multibib}
+%\usepackage[]{natbib}
+\newcites{book,art}{{Others},{Peer Reviewed Journals}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume
+%in Chinese using CJK
+\maketitle
+
+
+\section{Professional Experience}
+\cventry{since 06.2013}{Post Doc}{Humboldt-Universität zu
+  Berlin}{}{}{Modeling of the host-pathogen-interaction during
+  influenza A infection}
+\cventry{2012--2013}{Founder}{Webpgr
+  Project}{}{}{Co-founder of a web technology startup (\url{http://www.webpgr.com})}
+\cventry{2011--2012}{IT-Consultant}{Diehl und Brüser Handelskonzepte
+  GmbH}{Düsseldorf}{}{Technical consulting in the creation of an
+  innovative retail solution (\url{www.emmas-enkel.de})}
+\cventry{2011}{Mentor}{Google Summer of Code}{Berlin/San Francisco,
+  CA}{}{Mentor in the project Biographer
+  (\url{http://code.google.com/p/biographer})}
+\cventry{05.2009--06.2013}{Graduate student}{Humboldt-Universität zu
+  Berlin}{}%{\emph{Grade:} summa cum laude}
+{}{Theoretical Biophysics}
+\cventry{06--07.2007}{Scientific Exchange}{Virginia Bioinformatics
+  Intitute, Virgina Tech}{Blacksburg, VA}{USA}{}
+\cventry{2007--2008}{Working Student}{Kinetic Modeling Group,
+  Max-Planck-Institute for Molecular Genetics}{Berlin}{}{Software
+  Development, Modeling} 
+\cventry{2005--2007}{Working Student}{Institute for Biometrics, Charité}{Berlin}{}{Creation of a
+  web-based e-learning platform} 
+\cventry{2005}{Practical}{Institute for Biometrics, Charité}{Berlin}{}{Statistical analysis of clinical
+  trials.} \cventry{2002--2003}{Community service}{Children's home Sankt
+  Mauritz}{Münster}{}{}
+\cventry{1997--2000}{Web designer}{Dino-Graphics/Netcentric}{Arnsberg}{}{Web design for local
+  businesses}
+
+\section{Education}
+\cventry{06.2013}{Dr. rer. nat.}{Humboldt-Universität zu Berlin}{}{}{Theoretical Biophysics}
+\cventry{10.2006--08.2008}{M.Sc.}{Freie Universität}{Berlin}{}%{\emph{Grade:} 1,3}
+{Master course in Bioinformatics specializing in mathematical modeling
+and scientific visualization.}
+\cventry{10.2003--06.2006}{B.Sc.}{Freie Universität}{Berlin}{}{Bachelor Bioinformatics}
+
+
+\section{Dissertation}
+\cvitem{Title}{Functional Analysis of High-Throughput Data for Dynamic
+  Modeling in Eukaryotic Systems.}
+\cvitem{Adviser}{Prof. Dr. Dr. h.c. Edda Klipp}
+% \cvitem{Abstract}{
+%   The main theme of the work is the integration of biological mass
+%   data into dynamic models of molecular processes. The thesis
+%   consists of three major parts:
+%   \begin{itemize}
+%     \item Boolean modeling of gene regulation during cell differentiation and
+%       somatic cell reprogramming.
+%     \item Modeling the Hog1 pathway in Yeast using differential
+%       equations and Boolean functions.
+%     \item Analysis and annotation of micro array and mass spectronomy data.
+%   \end{itemize}}
+
+% \section{Master Thesis}
+% \cvitem{Title}{ModelMage: A software for automatic model generation
+%   and management.} \cvitem{Supervisor}{Dr. Jörg Schaber
+%   (Max-Planck-Institute for Molecular Genetics, Berlin) }
+% \cvitem{Abstract}{ I developed a software for automatic generation,
+%   management, and comparison of ensembles of differential equation
+%   models. This software was tested using different models of a
+%   signaling pathway in yeast.} %arguments 3 to 6 can be left empty
+
+
+\section{Teaching Experience}
+\cventry{2010--2014}{Python for natural sciences}{Humboldt-Universität
+  zu Berlin}{}{}{Organizer and teacher of a two weeks course on
+  Python, Linux, bioinformatic webservices, matplotlib, etc.
+  (for bachelor and master students)}
+
+\cventry{2013}{ODE modeling in Matlab}{Humboldt-Universität
+  zu Berlin}{}{}{A one week course on dynamic pathway modeling in Matlab.}
+
+\cventry{2011}{Statistics using R}{Humboldt-Universität zu
+  Berlin}{}{}{Course for Phd. students on micro-array analysis}
+
+\cventry{2010}{Electrodynamics}{Humboldt-Universität zu
+  Berlin}{}{}{Tutor in the bachelor's course in Biophysics}
+
+% \section{Stays Abroad}
+% \cventry{06--07.2007}{Scientific Exchange}{Virginia Bioinformatics
+%   Intitute, Virgina Tech}{Blacksburg, VA}{USA}{}
+% \cventry{09.2008--05.2009}{Traveling}{Asia}{}{}{Traveled through
+%   Southeast Asia, China, Japan, and Sri Lanka after graduation.}
+
+% \section{Languages}
+% \cvlanguage{German}{mother tongue}{}
+% \cvlanguage{English}{fluent}{}
+% \cvlanguage{French}{basic knowledge}{}
+
+\section{Honours and Awards}
+\label{sec:honours}
+\cventry{2013}{\emph{Dissertation}}{Humboldt-Universität
+  zu Berlin}{}{}{My dissertation was honoured with highest praise
+  (summa cum laude).}
+\cventry{2010}{Travel Grant}{German Cancer Research
+  Center}{}{}{This grant allowed me to visit the conference ``Systems
+  Bioloy of Human Disease'' in Boston.}
+
+\section{IT Skills}
+\cvitem{Programming}{Python, JavaScript, C, C++, Java}
+\cvitem{Modeling}{COPASI, Matlab, R, Scipy, Cain, STEPS}
+\cvitem{Data Analysis}{Bioconductor, Biopython, Pandas, dplyr}
+\cvitem{Network Analysis}{NetworkX, Cytoscape, Pajek}
+\cvitem{Visualization}{ggplot2, D3.js, POV-Ray, Adobe CS}
+\cvitem{Operating Systems}{Linux, Apple OS X, Microsoft Windows}
+\cvitem{Productivity}{Latex, version control systems
+(Git, Mercurial, Subversion)}
+
+% \section{Interests}
+% \cvitem{Science}{dynamical modeling, stem cells, virus biology, open
+%   science, science communication, statistics}
+% \cvitem{Web Development}{Design and development of webapps.}
+% \cvitem{Sports}{rock climbing, bouldering, kite surfing, badminton}
+
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+%\nocitep{*}
+%\bibliographystyle{plain}
+%\bibliography{my_publications}                   % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+\clearpage
+\section{Publications}
+\setbiblabelwidth{10}
+\nociteart{Floettmann2014,Flottmann2014b,Krause,Flottmann2013,Floettmann2012,Schaber2011,Mah2011,Waltermann2011,Flottmann2008}
+\bibliographystyleart{plainyr}
+\bibliographyart{my_publications}              % 'publications' is the
+                                % name of a BibTeX file
+\nocitebook{Floettmann2012a,Floettmann2011}
+\bibliographystylebook{plainyr}
+\bibliographybook{my_publications}              % 'publications' is the name of a BibTeX file
+
+%\clearpage\end{CJK*}                         % if you are typesetting
+%your resume in Chinese using CJK; the \clearpage is required for
+%fancyhdr to work correctly with CJK, though it kills the page
+%numbering by making \lastpage undefined
+
+\vspace*{10ex}
+
+\end{document}
+
+
+%% end of file `template.
